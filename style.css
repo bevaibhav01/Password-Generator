@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(231deg,rgba(22,6,40,1) 0%,rgba(52,28,79,1) 50%,rgba(88,7,125,1) 100%);
+}
+.container{
+    width: 90%;
+    max-width: 450px;
+}
+
+h1{
+    color: white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+.display1-password{
+    position: relative;
+    background-color: hwb(282 0% 81%);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid rgb(97, 7, 133);
+    padding: 0;
+    margin-bottom: 15px;
+    
+    
+}
+
+.display-password{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 1rem 5px;
+    color: yellow;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 2.25rem;
+    
+}
+.display-password::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: yellow;
+    opacity: 0.65;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+  
+}
+
+.display1-password button{
+    position:absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+
+}
+
+.password-type{
+    width: 100%;
+    background-color: hwb(282 0% 81%);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid rgb(97, 7, 133);
+    height: 450px;
+}
+
+.password-length{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.password-length p{
+    color: yellow;
+    font-size: 1.5rem;
+
+
+}
+
+.strength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+
+}
+
+.strength p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.indicator-password{
+    width: 1.5rem;
+    height: 1.20rem;
+    border-radius: 50%;
+    
+
+}
+
+.give-password{
+    background-color: #cb17cb;
+    color: yellow;
+    border-bottom: 0.35rem solid yellow;
+    width: 100%;
+    height: 45px;
+    border-radius: 0.75rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    
+    
+}
+
+.password-items{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+
+}
+
+.password-items input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid cyan;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.35rem;
+}
+
+.password-items input:checked{
+    background-color: cyan;
+
+}
+
+.password-items input:checked::before{
+    content: '✓';
+    position: absolute;
+    color: teal;
+    font-size: 1.05rem;
+    font-weight: 600;
+    left: 50%;
+    top: -3.5px;
+    transform: translateX(-50%);
+}   
+
+.password-items label{
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 0.75rem;
+    background:violet ;
+    background-image: linear-gradient(hwb(282 0% 81%), violet);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 10px;
+  }
+  
+  /* .slider:focus {
+    outline: 2px solid yellow;
+    
+  } */
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: yellow;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.5);
+    transition: all 100ms ease-in;
+    cursor: pointer;
+    margin-top: -3px;
+    z-index: 2;
+    position: relative;
+    transform: translateY(17%);
+  }
+  
+  /* .slider::-webkit-slider-thumb:hover {
+    outline: 2px solid yellow;
+    background-color:hwb(282 0% 81%);
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.8);
+  } */
+
+  .copy-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+   
+
